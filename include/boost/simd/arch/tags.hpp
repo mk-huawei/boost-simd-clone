@@ -11,6 +11,7 @@
 #define BOOST_SIMD_ARCH_TAGS_HPP_INCLUDED
 
 #include <boost/simd/arch/common/tags.hpp>
+#include <boost/simd/arch/arm/tags.hpp>
 #include <boost/simd/arch/x86/tags.hpp>
 #include <boost/simd/arch/ppc/tags.hpp>
 

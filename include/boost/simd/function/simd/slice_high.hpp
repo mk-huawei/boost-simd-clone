@@ -18,6 +18,10 @@
 #  if BOOST_HW_SIMD_X86_OR_AMD >= BOOST_HW_SIMD_X86_AVX_VERSION
 #    include <boost/simd/arch/x86/avx/simd/function/slice_high.hpp>
 #  endif
+#elif defined(BOOST_HW_SIMD_ARM_AVAILABLE)
+#  if BOOST_HW_SIMD_ARM >= BOOST_HW_SIMD_ARM_NEON_VERSION
+#    include <boost/simd/arch/arm/neon/simd/function/slice_high.hpp>
+#  endif
 #endif
 
 #endif

@@ -13,4 +13,10 @@
 #include <boost/simd/function/scalar/maximum.hpp>
 #include <boost/simd/arch/common/generic/function/autodispatcher.hpp>
 
+#if defined(BOOST_HW_SIMD_ARM_AVAILABLE)
+#  if BOOST_HW_SIMD_ARM >= BOOST_HW_SIMD_ARM_NEON_VERSION
+#    include <boost/simd/arch/arm/neon/simd/function/maximum.hpp>
+#  endif
+#endif
+
 #endif

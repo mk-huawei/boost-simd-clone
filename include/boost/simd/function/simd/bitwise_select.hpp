@@ -18,6 +18,10 @@
 #  if BOOST_HW_SIMD_X86_AMD_XOP
 #    include <boost/simd/arch/x86/xop/simd/function/bitwise_select.hpp>
 #  endif
+#elif defined(BOOST_HW_SIMD_ARM_AVAILABLE)
+#  if BOOST_HW_SIMD_ARM >= BOOST_HW_SIMD_ARM_NEON_VERSION
+#    include <boost/simd/arch/arm/neon/simd/function/bitwise_select.hpp>
+#  endif
 #endif
 
 #if defined(BOOST_HW_SIMD_PPC_AVAILABLE)
